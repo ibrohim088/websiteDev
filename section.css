@@ -2,13 +2,17 @@
 /* ? storys style css ======================================================================================================== */
 /* .story_content {} */
 
+.container {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
 .story_content_list {
   display: flex;
   align-items: center;
   gap: 15px;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 10px;
 }
 
 .story_content_list_item {
@@ -28,4 +32,3 @@
   height: 40px;
   display: block;
 }
-
