@@ -1,0 +1,31 @@
+/* ? storys style css ======================================================================================================== */
+/* ? storys style css ======================================================================================================== */
+/* .story_content {} */
+
+.story_content_list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.story_content_list_item {
+  border: 2px solid #000;
+  border-radius: 50%;
+  padding: 4px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.story_content_list_item:first-child {
+  margin-right: 1em;
+}
+
+.list_item_content {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
