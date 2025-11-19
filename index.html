@@ -12,12 +12,93 @@
 
   <!-- global style css -->
   <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
+  <title>Connestify social media</title>
 </head>
 
 <style>
+  .reels_lits {
+    height: 1000px;
+  }
 
+  .reels_lits_item {
+    border: 1px solid black;
+    border-radius: 17px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+    transition: all .3s ease;
 
+    &:hover {
+      -webkit-box-shadow: 0px 5px 30px 0px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 0px 5px 30px 0px rgba(34, 60, 80, 0.2);
+      box-shadow: 0px 5px 30px 0px rgba(34, 60, 80, 0.2);
+    }
+  }
+
+  .reels_lits_item_img,
+  .reels_lits_item_comments {
+    border: 1px solid #3c4645;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+  }
+
+  .reels_lits_item_img {
+    object-fit: cover;
+  }
+
+  .reels_lits_item_comments {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .comments_list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    max-height: 100%;
+    overflow-y: auto;
+
+    scrollbar-width: none;
+    scrollbar-color: #999 #f0f0f0;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #999;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f0f0f0;
+    }
+  }
+
+  .comments_list_item {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .comments_list_item_accProfile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .comments_list_item_comment {
+    font-size: 14px;
+    font-weight: 100;
+    display: flex;
+    flex-wrap: wrap;
+  }
 </style>
 
 <body>
@@ -108,13 +189,44 @@
 
     <section class="reels_section">
       <div class="container">
-        <div class="reels_content">
-          <ul class="reels_content_lits">
-            <li class="reels_content_lits_item">
-              
-            </li>
-          </ul>
-        </div>
+        <ul class="reels_lits">
+          <li class="reels_lits_item">
+            <div class="reels_lits_item_img">
+              <!-- botka rasm qoyiladi usha reels ga qoyilgan rasm -->
+            </div>
+            <div class="reels_lits_item_comments">
+              <ul class="comments_list">
+                <li class="comments_list_item">
+                  <div class="comments_list_item_accProfile">
+                    <!-- <img src="./profileLogo" alt=""> -->
+                    <svg class="list_item_content" viewBox="0 0 50 50">
+                      <circle cx="25" cy="25" r="24" fill="#e0e0e0" />
+                    </svg>
+                    <p>profileName</p>
+                  </div>
+                  <p class="comments_list_item_comment">Далеко-далеко за словесными горами в стране гласных и согласных
+                    живут рыбные тексты. Lorem безопасную дороге живет эта города над на берегу продолжил
+                    безорфографичный текстов заманивший ручеек страну подзаголовок, обеспечивает предложения о всеми он?
+                  </p>
+                </li>
+                <li class="comments_list_item">
+                  <div class="comments_list_item_accProfile">
+                    <!-- <img src="./profileLogo" alt=""> -->
+                    <svg class="list_item_content" viewBox="0 0 50 50">
+                      <circle cx="25" cy="25" r="24" fill="#e0e0e0" />
+                    </svg>
+                    <p>profileName</p>
+                  </div>
+                  <p class="comments_list_item_comment">Далеко-далеко за словесными горами в стране гласных и согласных
+                    живут рыбные тексты. Lorem безопасную дороге живет эта города над на берегу продолжил
+                    безорфографичный текстов заманивший ручеек страну подзаголовок, обеспечивает предложения о всеми он?
+                  </p>
+                </li>
+
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
